@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <>
       {/* Footer Start */}
-      <footer class="footer-distributed" style={{ backgroundColor: "#3e3d89" }}>
-        <div class="footer-left">
+      <footer className="footer-distributed" style={{ backgroundColor: "#3e3d89" }}>
+        <div className="footer-left">
           <img
             src="img/lezlayNew.png"
             alt="Logo"
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="footer-center">
+        <div className="footer-center">
           <span className="text-white">Contact Us</span>
           <div className="mt-3">
             <IoLocation color="white" size={20} className="me-3" />
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="footer-right">
+        <div className="footer-right">
           <div
             id="map-container-section"
             className=""
