@@ -11,13 +11,15 @@ import {
   MdQueryStats,
 } from "react-icons/md";
 import { MotionAnimate } from "react-motion-animate";
+import { useState } from "react";
 
 const MailSection = () => {
+  const [Mail , setMail] = useState("")
   return (
     <>
       <MotionAnimate animation="fadeInUp" reset={true}>
         {/* Service Start */}
-        <div className="container-xxl py-6" data-aos="zoom-in">
+        <div className="container-xxl py-6" style={{backgroundColor:"#ECECEC"}} data-aos="zoom-in">
           <div className="container">
             <div
               className="mx-auto text-center wow fadeInUp"
@@ -162,25 +164,31 @@ const MailSection = () => {
       {/* Newsletter Start */}
       <div
         className="container-xxl my-6 wow fadeInUp"
-        style={{ backgroundColor: "#05386B" }}
+        style={{ backgroundColor: "#3e3d89" }}
       >
         <div className="container px-lg-5">
           <div className="row align-items-center" style={{ height: "250px" }}>
             <div className="col-12 col-md-6">
               <h3 className="text-white">Ready to get started</h3>
-              {/* <small className="text-white">
-                Diam elitr est dolore at sanctus nonumy.
-              </small> */}
+              <small className="text-white ms-2">
+              Don’t be shy
+              </small>
               <div className="position-relative w-100 mt-3">
                 <input
                   className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
                   type="text"
                   placeholder="Enter Your Email"
+                  onChange={(e) => setMail(e.target.value)}
+                  value={Mail}
                   style={{ height: "48px" }}
                 />
                 <button
                   type="button"
                   className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                  onClick={() => {
+                    alert("Thanks for Contacting us")
+                    setMail("")
+                  }}
                 >
                   {/* <i className="fa fa-paper-plane text-primary fs-4"> */}
                   <FaPaperPlane size={25} color="#05386B" />

@@ -52,7 +52,7 @@ const Contact = () => {
   return (
     <>
       <MotionAnimate animation="fadeInUp" reset={true}>
-        <div className="container-xxl py-4">
+        <div className="container-xxl py-4" style={{backgroundColor:"#ECECEC"}}>
           <div className="container" style={{}}>
             <div
               className="mx-auto text-center "

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer Start */}
-      <footer class="footer-distributed" style={{ backgroundColor: "#05386B" }}>
+      <footer class="footer-distributed" style={{ backgroundColor: "#3e3d89" }}>
         <div class="footer-left">
           <img
             src="img/lezlayNew.png"

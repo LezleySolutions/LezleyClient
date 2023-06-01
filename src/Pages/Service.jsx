@@ -4,6 +4,7 @@ import MailSection from '../Components/MailSection'
 import ClientFeed from '../Components/ClientFeed'
 import Footer from '../Components/Footer'
 import { useNavigate } from 'react-router-dom'
+import Technologise from '../Components/Technologise'
 
 const Service = () => {
   const navigate = useNavigate()
@@ -36,6 +37,7 @@ const Service = () => {
           </p>
         </div>
       <MailSection />
+      <Technologise />
       <ClientFeed />
       <Footer />
     </>

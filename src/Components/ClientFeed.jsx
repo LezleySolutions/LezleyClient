@@ -1,13 +1,35 @@
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 import { FaQuoteLeft } from "react-icons/fa";
 
 const ClientFeed = () => {
+  const options = {
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 0,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 2500,
+    smartSpeed: 450,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+};
   return (
     <>
-      <div className="container-xxl py-6">
+      <div className="container-xxl py-6" >
         <div className="container">
           <div
             className="mx-auto text-center wow fadeInUp"
@@ -21,8 +43,8 @@ const ClientFeed = () => {
             </h2>
             <h2 className="mb-5">What Our Clients Say!</h2>
           </div>
-          <OwlCarousel className="owl-carousel testimonial-carousel" loop>
-            <div className="testimonial-item rounded p-4">
+          <OwlCarousel  className="owl-carousel testimonial-carousel" {...options}>
+            <div className="testimonial-item rounded p-4 border-0">
               <FaQuoteLeft className="mb-3" size={40} color="#05386B" />
               <p>
                 Great cutomer support from beginning
@@ -40,7 +62,7 @@ const ClientFeed = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonial-item rounded p-4">
+            <div className="testimonial-item rounded p-4 border-0">
               <FaQuoteLeft className="mb-3" size={40} color="#05386B" />
               <p>
                 The service is smooth and straightforward. My advisor was
@@ -58,7 +80,7 @@ const ClientFeed = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonial-item rounded p-4">
+            <div className="testimonial-item rounded p-4 border-0">
               <FaQuoteLeft className="mb-3" size={40} color="#05386B" />
               <p>
               The item was fantastic. Excellent delivery.I would recommend deal direct.
@@ -75,7 +97,7 @@ const ClientFeed = () => {
                 </div>
               </div>
             </div>
-            <div className="testimonial-item rounded p-4">
+            <div className="testimonial-item rounded p-4 border-0">
               <FaQuoteLeft className="mb-3" size={40} color="#05386B" />
               <p>
                 Amazing quality of work. Your Team is so efficient and professional.  

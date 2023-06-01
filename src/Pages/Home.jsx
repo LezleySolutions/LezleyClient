@@ -7,6 +7,8 @@ import NavbarHome from "../Components/NavbarHome";
 import Footer from "../Components/Footer";
 import ClientFeed from "../Components/ClientFeed";
 import { useNavigate } from "react-router-dom";
+import Technologise from "../Components/Technologise";
+import Message from "../Components/Message";
 
 const Home = () => {
   const navigate = useNavigate()
@@ -61,10 +63,12 @@ const Home = () => {
         </div>
         {/* Spinner end */}
         <NavbarHome />
+        <Message />
         <AboutHome />
         <MailSection />
+        <Technologise />
         <ClientFeed />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </>

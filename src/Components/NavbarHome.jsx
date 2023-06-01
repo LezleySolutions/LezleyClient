@@ -131,8 +131,7 @@ function NavbarHome() {
                 </h1>
                 <p className="text-white pb-3 animated zoomIn">
                   Lezlay Solution is a software company, providing web based solutions,
-                  software based solutions and also call center services
-                  according to client's requirements.
+                  software based solutions & High Quality IT Solution Developed in pakistan
                 </p>
                 {/* <a
                   href="/"
@@ -141,10 +140,10 @@ function NavbarHome() {
                   Learn More
                 </a> */}
               </div>
-              <div className="col-lg-6 text-center text-lg-start pb-5">
+              <div className="col-lg-6 text-center text-lg-start ">
                 <img
                   className="img-fluid animated zoomIn HeroImg"
-                  src="img/Hero10.png"
+                  src="img/pngegg4.png"
                   alt=""
                 />
               </div>

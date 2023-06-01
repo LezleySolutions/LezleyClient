@@ -18,8 +18,7 @@ const AboutHome = () => {
               <h2 className="mb-4 text-uppercase">who we are</h2>
               <p className="mb-4">
                 We are a software company, providing web based solutions,
-                software based solutions and also call center services according
-                to client's requirements.
+                software based solutions & High Quality IT Solution Developed in pakistan
               </p>
               <div className="row g-3 mb-4">
                 <div className="col-12 d-flex">

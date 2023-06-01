@@ -4,6 +4,7 @@ import AboutHome from '../Components/AboutHome'
 import ClientFeed from '../Components/ClientFeed'
 import Footer from '../Components/Footer'
 import { useNavigate } from 'react-router-dom'
+import Message from '../Components/Message'
 
 const About = () => {
   const navigate = useNavigate()
@@ -36,6 +37,7 @@ const About = () => {
           </p>
         </div>
       <div className='mt-5'>
+      <Message />
       <AboutHome />
       </div>
       <ClientFeed />
