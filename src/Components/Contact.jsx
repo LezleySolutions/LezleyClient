@@ -27,7 +27,7 @@ const Contact = () => {
       };
       const config = {
         method: "POST",
-        url: "http://localhost:5000/con/contacting",
+        url: "http://api.lezleysolutions.com/con/contacting",
         data: data,
         headers: {
           "Content-Type": "application/json",
